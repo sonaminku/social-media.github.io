@@ -28,6 +28,7 @@ const PostCard = ({
     if (myProfile?.id) {
       fetchIsSaved();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [myProfile?.id]);
 
   const fetchIsSaved = () => {

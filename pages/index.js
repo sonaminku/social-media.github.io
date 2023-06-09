@@ -23,6 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchPosts();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   
@@ -39,6 +40,7 @@ export default function Home() {
           setProfile(result.data[0]);
         }
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session?.user?.id]);
 
   const fetchPosts = () => {

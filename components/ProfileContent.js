@@ -17,6 +17,7 @@ const ProfileContent = ({ activeTab, userId }) => {
     if(activeTab === 'posts') {
         loadPosts().then(() => {})
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userId]);
 
   const loadPosts = async() => {
